@@ -5,6 +5,10 @@ puts "----------"
 
 # Your code goes below here ...
 class Store 
+  has_many :employees
+end
+class Employee
+belongs_to :store
 end
 Store.create(name: "Burnaby", annual_revenue: 300000, mens_apparel: true, womens_apparel: true)  
 Store.create(name: "Richmond ", annual_revenue: 1260000, mens_apparel: false, womens_apparel: true)
